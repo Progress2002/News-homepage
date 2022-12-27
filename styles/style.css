@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1,
@@ -81,6 +81,7 @@ header #mobile-nav {
   gap: 17px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  font-size: 20px;
 }
 
 header #desktop-nav {
@@ -269,5 +270,99 @@ header #overlay {
 
 #bottom-section .image-laptop {
   width: 180px;
+}
+
+@media (min-width: 765px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  #main {
+    width: 80%;
+    margin: auto;
+  }
+  header {
+    margin: 20px auto;
+  }
+  header a {
+    color: #00001a;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  header #desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
+  header #hamburger {
+    display: none;
+  }
+  #top-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  #top-section h1 {
+    margin: 20px 0 0;
+    font-size: 40px;
+    width: 270px;
+    line-height: 40px;
+  }
+  #top-section .main {
+    width: 70%;
+    margin-bottom: 0;
+  }
+  #top-section .main .body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #top-section .main .body .body-description {
+    width: 50%;
+    margin-top: 20px;
+  }
+  #top-section .image {
+    height: 270px;
+  }
+  #top-section .image .img-desktop {
+    display: block;
+  }
+  #top-section .image .img-mobile {
+    display: none;
+  }
+  #top-section .btn {
+    margin-bottom: 0;
+  }
+  #top-section .new-content {
+    margin-bottom: 0;
+    width: 30%;
+  }
+  #bottom-section {
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 70px;
+  }
+  #bottom-section li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+  #bottom-section .image {
+    width: 130px;
+    height: 125px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
