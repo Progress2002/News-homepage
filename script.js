@@ -8,4 +8,4 @@ const toggle = () => {
   overlay.classList.toggle('active');
 }
 
-navToggleBtn.addEventListener('clicks', toggle)
+navToggleBtn.addEventListener('click', toggle)
